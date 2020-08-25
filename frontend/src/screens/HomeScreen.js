@@ -12,6 +12,7 @@ function HomeScreen(props) {
       const {data} = await axios.get("/api/products");
       setProduct(data);
     }
+    fetchData(); // mengambalikan data callback api asyncronus
     return () => {
       //
     };
